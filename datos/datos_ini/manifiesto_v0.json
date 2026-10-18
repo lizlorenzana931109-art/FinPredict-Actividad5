@@ -1,0 +1,58 @@
+{
+  "proyecto": "FinPredict",
+  "version": "v0",
+  "descripcion": "Dataset analítico sintético previo a limpieza",
+  "unidad_analisis": "credito-fecha_corte",
+  "fecha_final_historico": "2025-12-31",
+  "target": "incumplimiento_90d",
+  "umbral_incumplimiento_dias": 90,
+  "predictores_iniciales": [
+    "monto_original",
+    "plazo_meses",
+    "tasa_interes_anual",
+    "pago_mensual",
+    "ingreso_mensual",
+    "antiguedad_meses",
+    "saldo_vencido",
+    "dias_atraso",
+    "relacion_pago_ingreso",
+    "saldo_vencido_mensualidades",
+    "importe_pagado_3m",
+    "numero_pagos_3m",
+    "importe_exigible_3m",
+    "obligaciones_3m",
+    "porcentaje_pago_3m"
+  ],
+  "columnas_auditoria": [
+    "mora_90_corte",
+    "tipo_empleo",
+    "edad",
+    "region",
+    "pagos_parciales_3m",
+    "regularizaciones_3m",
+    "categoria_cobertura_3m"
+  ],
+  "archivos": {
+    "finpredict_analitico_v0.parquet": {
+      "registros": 390661,
+      "columnas": 30,
+      "positivos": 23650,
+      "tamano_mb": 17.27,
+      "sha256": "072c98a9a9664411af8fcad94942f3aab6170140e7177421adf153f0629c63d1"
+    },
+    "finpredict_desarrollo_v0.parquet": {
+      "registros": 350520,
+      "columnas": 30,
+      "positivos": 21368,
+      "tamano_mb": 15.58,
+      "sha256": "9feed312205d000229aaa2f7e8111d2d911dd296699ea8222096490c39c5fe63"
+    },
+    "finpredict_evaluacion_v0.parquet": {
+      "registros": 40141,
+      "columnas": 30,
+      "positivos": 2282,
+      "tamano_mb": 3.41,
+      "sha256": "9ee793ed8cabaea36914e8a9aa943f08d37289b6383c17e88be50bb433c289d0"
+    }
+  }
+}
