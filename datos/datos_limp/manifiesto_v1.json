@@ -1,0 +1,55 @@
+{
+  "proyecto": "FinPredict",
+  "actividad": 5,
+  "version": "v1",
+  "notebook_origen": "02_preparacion_datos.ipynb",
+  "fuente": "finpredict_fuente_calidad.parquet",
+  "estado": "Preparado para fase de modelado",
+  "variable_objetivo": "incumplimiento_90d",
+  "predictores": [
+    "monto_original",
+    "plazo_meses",
+    "tasa_interes_anual",
+    "pago_mensual",
+    "ingreso_mensual",
+    "antiguedad_meses",
+    "saldo_vencido",
+    "dias_atraso",
+    "relacion_pago_ingreso",
+    "saldo_vencido_mensualidades",
+    "importe_pagado_3m",
+    "numero_pagos_3m",
+    "importe_exigible_3m",
+    "porcentaje_pago_3m"
+  ],
+  "numero_predictores": 14,
+  "particion": {
+    "desarrollo": "HISTORICO",
+    "evaluacion_final": "EVALUACION_FINAL"
+  },
+  "controles_calidad": {
+    "duplicados_restantes": 0,
+    "ingresos_faltantes": 0,
+    "montos_invalidos": 0,
+    "identificadores_directos_suprimidos": 3,
+    "etiquetas_preservadas": true
+  },
+  "observacion_metodologica": "La imputacion por mediana realizada en v1 es preliminar. En validacion temporal deben ajustarse las transformaciones exclusivamente con los datos de entrenamiento de cada pliegue.",
+  "archivos": {
+    "finpredict_preparado_v1.parquet": {
+      "registros": 390661,
+      "columnas": 34,
+      "sha256": "70f13886d53bcce5dd3558996fad12a9c161eddb117d6e292bc977b88d48746d"
+    },
+    "finpredict_desarrollo_v1.parquet": {
+      "registros": 350520,
+      "columnas": 34,
+      "sha256": "3199c0643260fad3f3a527b35782776c382b8be09e779eb1d6e3a83f8239a19b"
+    },
+    "finpredict_evaluacion_v1.parquet": {
+      "registros": 40141,
+      "columnas": 34,
+      "sha256": "897d00753f624ddaa9e1bf78f106293bad6958e71d2dda8fbccd52e14d74f70d"
+    }
+  }
+}
