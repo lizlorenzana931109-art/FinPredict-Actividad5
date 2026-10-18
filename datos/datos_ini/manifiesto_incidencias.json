@@ -1,0 +1,16 @@
+{
+  "proyecto": "FinPredict",
+  "fuente": "finpredict_fuente_calidad.parquet",
+  "origen": "Dataset sintético analítico v0 enriquecido",
+  "estado": "Sin limpieza ni anonimización",
+  "observaciones": 390861,
+  "columnas": 33,
+  "incidencias_programadas": {
+    "ingresos_nulos": 300,
+    "empleos_no_estandarizados": 250,
+    "montos_negativos": 100,
+    "fechas_formato_alterno": 250,
+    "duplicados_exactos": 200
+  },
+  "sha256": "b84e037458d6e794287c212368303f567c69664e26b664c1db9541a9c3d69452"
+}
