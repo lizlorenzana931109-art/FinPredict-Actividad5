@@ -115,7 +115,7 @@ Los pipelines se conservaron como artefactos de MLflow; no se implementó un des
 | `fuentes/02_preparacion_datos.ipynb` | Limpieza, controles de calidad y preparación. |
 | `fuentes/03_modelado_experimentacion.ipynb` | Entrenamiento, GridSearchCV, evaluación y MLflow. |
 | `evidencias/mlflow/` | Capturas de seguimiento y artefactos documentados. |
-| `evidencias/mlflow/resultados/` | CSV con resultados de optimización. |
+| `resultados` | CSV con resultados de optimización. |
 | `documentacion/` | Informe comparativo, evaluación de riesgos y estrategia MLOps. |
 
 ## 7. Herramientas utilizadas
